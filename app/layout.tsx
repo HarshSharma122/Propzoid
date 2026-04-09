@@ -8,6 +8,7 @@ import { Toaster } from "sonner";
 import { Bricolage_Grotesque } from "next/font/google";
 import { Lexend } from "next/font/google";
 import { Header } from "./_components/Header/Header";
+import Footer from "./_components/Footer/Footer";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
           <Toaster position="top-right" richColors />
           <Header />
           {children}
+          <Footer/>
         </body>
       </html>
     </ClerkProvider>
