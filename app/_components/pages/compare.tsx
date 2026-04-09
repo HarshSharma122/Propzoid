@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check, X, Zap, Headphones, FileSpreadsheet, TrendingUp, DollarSign, Users, PhoneCall } from 'lucide-react';
+import Link from 'next/link';
 
 const Compare = () => {
   const comparisonData = [
@@ -221,9 +222,11 @@ const Compare = () => {
           <p className="text-gray-600 mb-8">
             Join hundreds of property owners who've made the switch to PropZoid
           </p>
+          <Link href="/contact">
           <button className="bg-[#CC7F3B] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#A05F2A] transition-colors shadow-lg hover:shadow-xl">
             Start Your Free Trial
           </button>
+          </Link>
         </div>
       </div>
     </div>

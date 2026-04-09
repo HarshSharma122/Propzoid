@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { useUser } from "@clerk/nextjs";
+import { UserProfile, useUser } from "@clerk/nextjs";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
@@ -10,7 +10,6 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Steps", href: "#steps" },
   { name: "Pricing", href: "#pricing" },
-  { name: "Contact", href: "/contact" },
 ];
 
 export const Header = () => {
@@ -45,20 +44,14 @@ export const Header = () => {
              
               {isSignedIn && (
                 <Link className="cursor-pointer" href="/profile">
-                  <Button>Profile</Button>
+                 <UserProfile/>
                 </Link>
               )}
-              {!isSignedIn && (
-                <Link href="/auth/sign-up" className="cursor-pointer">
-                  <Button>Get started</Button>
+              <Link href="/contact" className="cursor-pointer">
+                  <Button>Book a Seat</Button>
                 </Link>
-              )}
-
-             <Link href="/admin" className="cursor-pointer">
-                  <Button variant="outline" className="cursor-pointer">
-                    Dashboard
-                  </Button>
-                </Link>
+             
+            
             </div>
             <Button
               variant="ghost"
@@ -123,17 +116,11 @@ export const Header = () => {
                         <Button>Profile</Button>
                       </Link>
                     )}
-                    {!isSignedIn && (
-                      <Link href="/auth/sign-up" className="cursor-pointer">
-                        <Button>Get started</Button>
+                    <Link href="/contact" className="cursor-pointer">
+                        <Button>Book a seat</Button>
                       </Link>
-                    )}
-
-                      <Link href="/admin" className="cursor-pointer">
-                        <Button variant="outline" className="cursor-pointer">
-                          Dashboard
-                        </Button>
-                      </Link>
+                   
+                    
                   </div>
                 </div>
               </nav>

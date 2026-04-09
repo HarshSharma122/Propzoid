@@ -5,6 +5,7 @@ import { ArrowRight, Building2, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import hero from "../../../public/hero.jpg";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -41,9 +42,11 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-center flex-wrap gap-4">
+            <Link href="/contact">
             <Button size="lg" className="gap-2">
-             Get started <ArrowRight className="h-4 w-4" />
+             Book a Seat <ArrowRight className="h-4 w-4" />
             </Button>
+            </Link>
          
           </div>
         </motion.div>

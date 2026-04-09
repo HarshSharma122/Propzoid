@@ -1,5 +1,6 @@
 import React from 'react';
 import { UserPlus, Home, BarChart3, Share2, Thermometer, Users } from 'lucide-react';
+import Link from 'next/link';
 
 const Steps = () => {
   const steps = [
@@ -132,9 +133,11 @@ const Steps = () => {
           <p className="text-xl mb-8 opacity-95">
             Join thousands of property owners who trust us with their listings
           </p>
+          <Link href="/contact">
           <button className="bg-white text-[#CC7F3B] px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors">
-            Get Started Now
+         Book Seat Now
           </button>
+          </Link>
         </div>
       </div>
     </div>
