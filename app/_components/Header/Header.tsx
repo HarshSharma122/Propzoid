@@ -50,6 +50,9 @@ export const Header = () => {
               <Link href="/contact" className="cursor-pointer">
                   <Button>Book a Seat</Button>
                 </Link>
+              <Link href="/dashboard" className="cursor-pointer">
+                  <Button>Dashboard</Button>
+                </Link>
              
             
             </div>

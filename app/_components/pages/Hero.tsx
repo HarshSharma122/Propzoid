@@ -61,7 +61,7 @@ const Hero = () => {
       >
         <div className="relative h-[420px] lg:h-[520px] rounded-3xl overflow-hidden shadow-2xl">
           <Image
-            src="/home2.png"
+            src="/home4.png"
             alt="Capital Square Property"
             fill
             priority
